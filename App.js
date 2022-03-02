@@ -16,18 +16,9 @@ export default function App() {
   return (
   <NavigationContainer>
     <Stack.Navigator>
-      <Stack.Screen name="PhoneNumber" component={PhoneNumber} />
-      <Stack.Screen name="OTPcode" component={OTPsrc} />
+      <Stack.Screen name="PhoneNumber" options={{ headerShown: false }} component={PhoneNumber} />
+      <Stack.Screen name="OTPcode" options={{ headerShown: false }} component={OTPsrc} />
     </Stack.Navigator>
   </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
